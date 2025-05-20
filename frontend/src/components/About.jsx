@@ -54,7 +54,7 @@ const About = forwardRef(({ onViewProject }, ref) => {
               className="block w-1/2"
               data-animate="slide-up-right"
             >
-              Dowload CV
+              Download CV
             </button>
 
             {isLoading && (
