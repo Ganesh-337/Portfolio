@@ -4,5 +4,8 @@
     "framework": null,
     "env": {
         "VITE_API_URL": "https://portfolio-kd23.onrender.com"
-    }
+    },
+    "rewrites":[
+        {"source": "/(.*)", "destination": "/"}
+    ]
 }
