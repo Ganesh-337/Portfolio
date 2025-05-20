@@ -19,8 +19,8 @@ const allowedOrigins = [
 app.use(express.json());
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 
-app.use("/api/message", messageRouter);
-app.use("/api/comment", commentRouter);
+app.use("/message", messageRouter);
+app.use("/comment", commentRouter);
 
 app.listen(port, () =>
   console.log(`Server started at http://localhost:${port}`)
