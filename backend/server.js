@@ -13,7 +13,7 @@ connectDB();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://portfolio-gamma-liart-64.vercel.app/",
+  "https://portfolio-gamma-liart-64.vercel.app",
 ];
 
 app.use(express.json());
