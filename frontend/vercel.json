@@ -1,0 +1,9 @@
+{
+    "buildCommand": "npm run build", 
+    "devCommand": "npm run dev",
+    "outputDirectory": "build",
+    "framework": null,
+    "env": {
+        "REACT_APP_API_URL": "http://localhost:4000"
+    }
+}
