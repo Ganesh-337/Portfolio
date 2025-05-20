@@ -3,6 +3,6 @@
     "outputDirectory": "dist",
     "framework": null,
     "env": {
-        "REACT_APP_API_URL": "https://portfolio-kd23.onrender.com"
+        "VITE_API_URL": "https://portfolio-kd23.onrender.com"
     }
 }
