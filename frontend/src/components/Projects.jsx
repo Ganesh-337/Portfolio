@@ -49,7 +49,7 @@ const Projects = ({ projectRef }) => {
   return (
     <div ref={projectRef} className="m-5">
       <h2 className="text-center">Projects</h2>
-      <div className="flex flex-col gap-3 md:grid md:grid-cols-3 m-5">
+      <div className="flex flex-col gap-5 lg:gap-3 md:grid md:grid-cols-3 lg:m-5">
         {viewProject.map((project) => (
           <div
             key={project.id}
@@ -60,7 +60,10 @@ const Projects = ({ projectRef }) => {
               <h2>{project.title}</h2>
               <p className="text-sm">{project.description}</p>
             </div>
-            <button className="mt-3" onClick={() => handleViewDetail(project.id)}>
+            <button
+              className="mt-3"
+              onClick={() => handleViewDetail(project.id)}
+            >
               View Detail
             </button>
           </div>
@@ -69,7 +72,7 @@ const Projects = ({ projectRef }) => {
       {!showProject && (
         <div
           onClick={() => setShowProject(true)}
-          className="bg-black w-fit mx-auto text-white hover:cursor-pointer hover:bg-white hover:text-black p-3 rounded-md shadow-md animate-slide-up"
+          className="mt-5 bg-black w-fit mx-auto text-white hover:cursor-pointer hover:bg-white hover:text-black p-3 rounded-md shadow-md animate-slide-up"
         >
           <p>View More</p>
         </div>

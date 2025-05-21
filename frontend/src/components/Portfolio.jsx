@@ -76,9 +76,9 @@ const Portfolio = forwardRef(({ setProjectRef }, ref) => {
         className="block text-center flex flex-col gap-5"
         data-animate="slide-up"
       >
-        <h1>Portfolio Showcase</h1>
+        <h1 className="lg:text-7xl text-5xl">Portfolio Showcase</h1>
         <h2
-          className="block w-fit mx-auto text-justify sm:text-center text-gray-600"
+          className="block mx-auto lg:text-justify text-gray-600 text-sm lg:text-2xl"
           data-animate="slide-up-right"
         >
           Explore my journey through projects, certifications, and technical

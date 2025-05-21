@@ -82,23 +82,25 @@ const ProjectDetail = () => {
     <div>
       <p
         onClick={handleBack}
-        className="bg-gray-500 w-fit rounded shadow-lg p-2 m-10 hover:bg-gray-600 hover:cursor-pointer"
+        className="bg-gray-500 w-fit rounded shadow-lg lg:p-2 p-1 lg:m-10 m-5 hover:bg-gray-600 hover:cursor-pointer animate-slide-right"
       >
         &larr; Back
       </p>
-      <div className="ml-10 mr-10 lg:p-10 lg:text-xl">
-        <div className="flex gap-2 items-center">
-          <h2 className="font-bold">Project</h2>
+      <div className="lg:m-10 m-5 lg:p-10 lg:text-xl">
+        <div className="flex gap-2 items-center animate-slide-down-left">
+          <h2 className="font-bold text-2xl">Project</h2>
           <p>&gt;</p>
           <p className="text-2xl text-gray-400">{project.title}</p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-15">
           <div className="lg:w-1/2 text-justify">
-            <h1 className="animate-slide-down animate-glow">{project.title}</h1>
+            <h1 className="mt-5 lg:text-7xl text-5xl animate-glow animate-slide-down">
+              {project.title}
+            </h1>
             <p className="mt-5 animate-slide-up">{project.description}</p>
-            <div className="mt-10 lg:mt-20 animate-slide-right">
-              <h2>{project.header_1}</h2>
+            <div className="mt-10 lg:mt-20 animate-slide-right flex flex-col gap-2">
+              <h2 className="text-xl font-semibold">{project.header_1}</h2>
               <div className="flex flex-col animate-slide-down">
                 {project.tech.map((item, index) => (
                   <div key={index} className="flex gap-2 items-center">
@@ -116,8 +118,8 @@ const ProjectDetail = () => {
               className="hover:scale-110 transition duration-300"
             />
 
-            <div className="mt-10 lg:mt-20 animate-slide-up-right">
-              <h2>{project.header_2}</h2>
+            <div className="mt-10 lg:mt-20 animate-slide-up-right flex flex-col gap-2">
+              <h2 className="text-xl font-semibold">{project.header_2}</h2>
               {project.feature.map((item, index) => (
                 <div
                   key={index}

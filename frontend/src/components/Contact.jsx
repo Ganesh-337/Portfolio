@@ -90,26 +90,23 @@ const Contact = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <div ref={ref} className="text-center">
-      <h1 className="block" data-animate="slide-down-left">
+    <div ref={ref} className="text-center lg:m-10 m-5">
+      <h1 className="block lg:text-7xl text-5xl" data-animate="slide-down-left">
         Contact Me
       </h1>
-      <h2 className="block" data-animate="slide-up">
+      <h2 className="block mt-5" data-animate="slide-up">
         Got a query? Send me a message, and I'll get back to you soon!
       </h2>
-      <div className="flex flex-col md:flex-row m-5 gap-10 lg:ml-20 lg:mr-20">
-        <div className="md:w-1/2 bg-linear-to-tr from-slate-700 to-0 rounded-lg shadow flex p-3">
+      <div className="flex flex-col md:flex-row mt-10 gap-10 lg:ml-20 lg:mr-20">
+        <div className="md:w-1/2 bg-linear-to-tr from-slate-700 to-0 rounded-lg shadow lg:p-3 p-5">
           <div
-            className="block flex flex-col mx-auto"
+            className="block flex flex-col mx-auto lg:m-5"
             data-animate="slide-down"
           >
-            <h1>Get in touch</h1>
+            <h2 className="text-2xl">Get in touch</h2>
             <p>Have something to discuss? Send me a message, let's talk.</p>
             <div>
-              <form
-                onSubmit={handleContact}
-                className="flex flex-col w-full mt-5 gap-5"
-              >
+              <div className="w-full flex flex-col mt-5 lg:gap-5 gap-3">
                 <input
                   type="text"
                   placeholder="Your Name"
@@ -131,17 +128,21 @@ const Contact = forwardRef((props, ref) => {
                   placeholder="Your Message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="block border p-2 rounded-lg h-50"
+                  className="block border p-2 rounded-lg lg:h-50 h-25"
                   data-animate="slide-up-right"
                 />
-                <button className="block" data-animate="slide-down-right">
+                <button
+                  onClick={handleContact}
+                  className="block"
+                  data-animate="slide-down-right"
+                >
                   Send me a message
                 </button>
-              </form>
+              </div>
 
               <div className="bg-gray-200 w-full h-0.5 rounded-lg mt-5"></div>
             </div>
-            <div className="">
+            <div className="mt-5">
               <h2>Connect with me</h2>
               <div
                 className="block flex flex-col md:flex-row m-5 gap-3"
@@ -165,9 +166,9 @@ const Contact = forwardRef((props, ref) => {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 bg-linear-to-tr from-slate-700 to-0 rounded-lg shadow p-3">
+        <div className="md:w-1/2 bg-linear-to-tr from-slate-700 to-0 rounded-lg shadow lg:p-3 p-5">
           <div
-            className="block flex flex-col mx-auto ml-10 mr-10"
+            className="block flex flex-col mx-auto lg:m-5 "
             data-animate="slide-down"
           >
             <div className="flex gap-2 justify-center items-center">
@@ -176,7 +177,7 @@ const Contact = forwardRef((props, ref) => {
             </div>
 
             <div className="bg-gray-200 w-full h-0.5 rounded-lg mt-5"></div>
-            <div className="w-full flex flex-col mt-5 gap-5">
+            <div className="w-full flex flex-col mt-5 lg:gap-5 gap-3">
               <input
                 type="text"
                 placeholder="Enter your Name"
@@ -190,7 +191,7 @@ const Contact = forwardRef((props, ref) => {
                 placeholder="Write your message here..."
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
-                className="block border p-2 rounded-lg h-50"
+                className="block border p-2 rounded-lg lg:h-50 h-25"
                 data-animate="slide-down-right"
               />
               <button

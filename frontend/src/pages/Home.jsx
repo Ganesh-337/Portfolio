@@ -46,9 +46,9 @@ const Home = () => {
         />
       </div>
 
-      <div className="mt-30 flex flex-col lg:flex-row gap-10 p-5 m-5">
-        <div className="block flex-1 w-1/2" data-animate="slide-left">
-          <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-white via-emerald-500 to-white">
+      <div className="mt-20 flex flex-col gap-10 p-5 m-5">
+        <div className="block lg:w-full" data-animate="slide-left">
+          <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-white via-emerald-500 to-white lg:text-7xl text-5xl">
             FullStack Developer
           </h1>
           <div className="mt-10 animate-slide-down-right animate-glow">
@@ -63,7 +63,7 @@ const Home = () => {
             </div>
 
             <ul
-              className="block flex gap-5 mt-20"
+              className="block flex gap-5 mt-20 "
               data-animate="slide-down-right"
             >
               <li className="bg-gradient-to-tr from-[black] to-[] shadow-lg">
@@ -108,7 +108,7 @@ const Home = () => {
       <div className="mt-20">
         <Portfolio ref={(el) => (sectionRef.current.portfolio = el)} />
       </div>
-      <div className="m-10 mt-20" data-animate="slide-left">
+      <div className="mt-20" data-animate="slide-left">
         <Contact ref={(el) => (sectionRef.current.contact = el)} />
       </div>
       <div className="bg-slate-900 opacity-50 mt-20 text-center text-gray-400 text-sm p-5">

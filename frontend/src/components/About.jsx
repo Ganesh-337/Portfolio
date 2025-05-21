@@ -22,7 +22,10 @@ const About = forwardRef(({ onViewProject }, ref) => {
 
   return (
     <div>
-      <h1 className="block text-center" data-animate="slide-down-left">
+      <h1
+        className="block text-center lg:text-7xl text-5xl"
+        data-animate="slide-down-left"
+      >
         ABOUT
       </h1>
       <div className="mt-15 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-2">
@@ -30,7 +33,7 @@ const About = forwardRef(({ onViewProject }, ref) => {
           <img
             src={Profile}
             alt="Profile Picture"
-            className="block w-70 h-70 mx-auto lg:mx-auto rounded-full cursor-pointer animate-shine"
+            className="block lg:w-90 lg:h-90 w-50 h-50 mx-auto rounded-full cursor-pointer animate-shine"
             data-animate="slide-down-right"
           />
         </div>
@@ -39,10 +42,10 @@ const About = forwardRef(({ onViewProject }, ref) => {
           className="order-2 lg:order-1 px-4 items-center lg:ml-30"
         >
           <p
-            className="block lg:text-2xl text-justify"
+            className="block lg:text-2xl text-sm lg:text-justify text-center"
             data-animate="slide-down-left"
           >
-            <p className="mb-5">Hey there! I'm Ganesh,</p>
+            <p className="mb-5 mt-5">Hey there! I'm Ganesh,</p>
             An Information Technology engineer interested in Frontend, Backend
             and Fullstack development. I focus on creating engaging digital
             experiences and always strive to provide the best solution possible
